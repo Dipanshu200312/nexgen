@@ -167,27 +167,92 @@
       flex-wrap: wrap; /* Allows wrapping for smaller screens */
     }
 
-    .box-feature {
-      background: #fff;
-      padding: 25px 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      flex: 1;
-      max-width: 300px;
-    }
+   /* Box feature styling */
+.box-feature {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Keeps the content tidy */
+}
 
-    .box-feature h4 {
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #2d3e50;
-      margin-bottom: 15px;
-    }
+/* Hover effect: Box lifts up */
+.box-feature:hover {
+  transform: translateY(-15px); /* Moves the box up when hovered */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: #f9f9f9; /* Slight background change on hover */
+}
 
-    .box-feature p {
-      font-size: 1.1em;
-      color: #777;
-      line-height: 1.6;
-    }
+/* Title styling */
+.box-feature h4 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #2d3e50;
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Transition for hover color change */
+  position: relative;
+  z-index: 2; /* Ensures text stays above the background */
+}
+
+/* Description text styling */
+.box-feature p {
+  font-size: 1.1em;
+  color: #777;
+  line-height: 1.6;
+  transition: color 0.3s ease; /* Transition for hover color change */
+  position: relative;
+  z-index: 2; /* Keeps the paragraph above any pseudo-elements */
+}
+
+/* Hover effect: Change text color */
+
+
+.box-feature:hover p {
+  color: #555; /* Darken paragraph text on hover */
+}
+
+/* Add animation on page load */
+.box-feature {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s forwards;
+  animation-delay: 0.2s; /* Stagger the animation */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add a subtle underline effect on title hover */
+.box-feature h4:hover {
+ 
+  
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* Adding a subtle border animation on hover */
+.box-feature::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
 
     .heading-cta {
       font-size: 1.5em;
