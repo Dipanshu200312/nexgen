@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Wealth Management</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://www.nexgentransfer.com/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="https://www.nexgentransfer.com/css/theme.css" /><link rel="stylesheet" href="css/theme-elements.css" /><link rel="stylesheet" href="css/theme-blog.css" /><link rel="stylesheet" href="css/theme-shop.css" /><link rel="stylesheet" href="css/theme-animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    /* Global styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container-main {
+      width: 100%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      background: #f5f7fa;
+      flex-direction: column;
+    }
+
+    /* Banner Section */
+    .section-banner {
+      width: 100%;
+      background: linear-gradient(135deg, #2d3e50, #374a60);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 100px;
+      box-sizing: border-box;
+    }
+
+    .content-banner {
+      max-width: 50%;
+      font-size: 1.2em;
+      line-height: 1.4;
+    }
+
+    .content-banner h1 {
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    .content-banner p {
+      margin-bottom: 20px;
+    }
+
+    .list-banner {
+      margin: 20px 0;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .list-banner-item {
+      background: #fff;
+      color: #2d3e50;
+      border-radius: 5px;
+      padding: 15px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    .btn-action {
+      background-color: #f4b400;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* Form Styles */
+    .form-contact-container {
+      background: rgb(9 158 74);
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      display: block;
+      max-width: 426px;
+      box-sizing: border-box;
+    }
+
+    .form-contact-container h3 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    .form-contact-container input, .form-contact-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+      background: #fff;
+      font-size: 1em;
+    }
+
+    .form-contact-container button {
+      width: 100%;
+      padding: 15px;
+      background: #f4b400;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .form-contact-container button:hover {
+      background: #e69500;
+    }
+
+    /* Content Section */
+    .section-content-main {
+      width: 100%;
+      padding: 60px 100px;
+      background: #f9f9f9;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-content-main h2 {
+      font-size: 2.8em;
+      font-weight: bold;
+      color: #2d3e50;
+      margin-bottom: 30px;
+    }
+
+    .paragraph-intro {
+      font-size: 1.3em;
+      color: #555;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .list-features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    }
+
+    .box-feature {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .box-feature h4 {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #2d3e50;
+      margin-bottom: 15px;
+    }
+
+    .box-feature p {
+      font-size: 1.1em;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .heading-cta {
+      font-size: 1.5em;
+      color: #2d3e50;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .section-banner {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .content-banner, .form-contact-container {
+        max-width: 100%;
+      }
+
+      .list-banner {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .btn-action {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.4em;
+      }
+
+      .section-content-main {
+        padding: 40px 20px;
+      }
+
+      .list-features {
+        flex-direction: column;
+        gap: 20px;
+        align-content: center;
+      }
+      
+        .wrapper {
+        padding: 0px;
+        padding-left: 104px;
+        display: none;
+}
+    }
+    .wrapper {
+        padding: 0px;
+        padding-left: 104px;
+}
+
+.inline-contact-list {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+    gap: 15px; /* Adds spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Vertically aligns items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #0088cc;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-item a:hover {
+    background-color: #004080;
+    color: #ffffff;
+}
+
+.hide-on-small {
+    display: none; /* Hide elements for small screens */
+}
+
+.button-primary {
+  
+    color: #333;
+   
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.icon-phone,
+.icon-envelope {
+    margin-right: 5px;
+    color: #333;
+}
+.highlighted-heading-section {
+  text-align: center; /* Center align the section */
+  margin-bottom: 20px; /* Add space below */
+}
+
+.highlighted-heading {
+  background-color: #d63384; /* Bright background color */
+  color: #ffffff; /* White text */
+  font-size: 2.5rem; /* Make it larger */
+  font-weight: bold; /* Emphasize text */
+  padding: 15px 30px; /* Add inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Adjust width to content */
+}
+.headertr {
+    background-color: #0088cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    font-size: 1.5em; /* Default font size */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Media Query for Mobile (screens up to 480px) */
+@media (max-width: 480px) {
+    .headertr {
+        font-size: 1.5em; /* Keep the font size the same on mobile */
+        padding: 1em; /* Adjust padding for better fit */
+    }
+}
+/* Hide mobile form by default */
+.form-contact-container-mobile {
+    display: none;
+}
+
+/* Hide desktop form by default */
+.form-contact-container {
+    display: block;
+}
+@media (max-width: 768px) {
+    .form-contact-container-mobile {
+      background: rgb(9 158 74);
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      display: block;
+      max-width: 426px;
+      box-sizing: border-box;
+    }
+
+    .form-contact-container {
+        display: none; /* Hide desktop form */
+    }
+}
+.social-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex; /* Align items in a row */
+      justify-content: center; /* Center align icons */
+      gap: 10px; /* Space between icons */
+    }
+
+    /* Remove default margin from list items */
+    .social-icons li {
+      margin: 0;
+    }
+
+    /* Style anchor links */
+    .social-icons a {
+      text-decoration: none;
+      display: inline-block;
+    }
+.form-contact-container-mobile h3 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    .form-contact-container-mobile input, .form-contact-container-mobile textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+      background: #fff;
+      font-size: 1em;
+    }
+
+    .form-contact-container-mobile button {
+      width: 100%;
+      padding: 15px;
+      background: #f4b400;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .form-contact-container-mobile button:hover {
+      background: #e69500;
+    }
+    .br {
+      display: none;
+    }
+
+    /* Show the break line only on mobile (max-width: 768px) */
+    @media (max-width: 768px) {
+      .br {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header id="header" class="header-narrow" data-plugin-options="{&quot;stickyEnabled&quot;: true, &quot;stickyEnableOnBoxed&quot;: true, &quot;stickyEnableOnMobile&quot;: true, &quot;stickyStartAt&quot;: 90, &quot;stickySetTop&quot;: &quot;-75px&quot;, &quot;stickyChangeLogo&quot;: true}" 
+    >
+                    <div class="header-body" style="top: 0px;">
+                        <div class="header-top header-top-colored header-top-primary"style="
+                        background: #0088cc;
+                        border-top-color: #0077b3;
+                    ">
+                          <div class="wrapper">
+                            <ul class="inline-contact-list">
+                                <li class="contact-item">Get in touch!</li>
+                                <li class="contact-item"><i class="icon-phone"></i> 9599445568</li>
+                                <li class="contact-item">
+                                    <a href="http://www.nexgentransfer.com/NexGen/NexGenUser/NexGenUserSignup/UserType.aspx" target="_blank" class="button-primary">Become Estate Planner</a>
+                                </li>
+                                <li class="contact-item">
+                                    <a href="https://www.nexgentransfer.com/consultation-request.html" class="button-primary">Free Consultation</a>
+                                </li>
+                                <li class="contact-item ">
+                                    <i class="icon-envelope"></i><a href="mailto:info@nexgentransfer.com">info@nexgentransfer.com</a>
+                                </li>
+                                <li class="contact-item">
+                                    <a href="http://www.nexgentransfer.com/NexGen/NexGenUser/NexGenUserSignup/UserType.aspx" target="_blank" class="button-primary">Become Estate Planner</a>
+                                </li>
+                                <li class="contact-item ">
+                                    <a href="https://www.nexgentransfer.com/consultation-request.html" class="button-primary">Request Free Consultation</a>
+                                </li>
+                                <li class="contact-item">
+                                    <a href="http://www.nexgentransfer.com/NexGen/NexGenUser/NexGenUserLogin/nexgen_userlogin.aspx">Login</a>
+                                </li>
+                            </ul>
+                        
+                            <ul class="social-icons" style="display: inline; list-style: none;">
+                            </ul>
+                        </div>
+                        
+                        </div>
+                        <div class="header-container container">
+                            <div class="header-row">
+                                <div class="header-column">
+                                    <div class="header-logo" style="width: 234px; height: 91px;">
+                                        <a href="https://www.nexgentransfer.com/default.aspx">
+                                            <img alt="NexGen" width="222" height="67" data-sticky-width="140" data-sticky-height="42" data-sticky-top="15" src="https://www.nexgentransfer.com/img/logo.jpg" style="top: 0px; width: 222px; height: 67px;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-column">
+                                    <div class="header-row">
+                                        <div class="header-nav header-nav-stripe">
+                                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" type="button">
+                                                <i class="fa fa-bars"></i>
+                                            </button>
+                                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                                                <nav>
+                                                    <ul class="nav nav-pills" id="mainNav">
+                                                        <li>
+                                                            <a href="https://www.nexgentransfer.com/default.aspx">
+                                                                <i class="fa fa-home fa-2x"></i>
+                                                            </a>
+    
+                                                        </li>
+                                                        <li class="dropdown">
+                                                            <a class="dropdown-toggle" href="#">Estate Planning
+                                                            <i class="fa fa-caret-down"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="https://www.nexgentransfer.com/What-is-Estate-Planning.aspx">Estate Planning</a></li>
+                                                                <li><a href="https://www.nexgentransfer.com/Estate-Planning-Basics.aspx">Estate Plan Basics</a></li>
+                                                                <li><a href="https://www.nexgentransfer.com/Discussing-Estate-Plan.aspx">Discussing Estate Plan</a></li>
+                                                                <li><a href="https://www.nexgentransfer.com/Organize-Your-Estate-Planning-Documents.aspx">Organizing Document for Estate Planning</a></li>
+                                                                <li><a href="https://www.nexgentransfer.com/getting-nominations-right-estate-planning.aspx">Right Way to Nominate</a></li>
+    
+                                                                <!-- <li><a href="Estate-Planning-Basics.aspx">Estate Planning Basics</a></li> -->
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.nexgentransfer.com/about.aspx">About Us
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown">
+                                                            <a class="dropdown-toggle" href="#">All About Will &amp; Trust
+                                                            <i class="fa fa-caret-down"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="https://www.nexgentransfer.com/will-india.aspx">All About Will</a></li>
+                                                                <li><a href="https://www.nexgentransfer.com/Trust-India.aspx">All About Trust</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a href="#">Will Services<i class="fa fa-caret-down"></i></a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="https://www.nexgentransfer.com/will-writing-service-india.aspx">Will Drafting</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/will-storage-safekeeping-service-india.aspx">Will Safekeeping</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/will-registration-india.aspx">Will Registration</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/will-nri.aspx">Will For NRI / PIOs</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/will-executor-india.aspx">Will Executorship</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/will-probate-services-india.aspx">Will Probate</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/execute-will-india.aspx">Will Administration</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/review-revise-revalidate-will.aspx">Will Review and Revision</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a href="#">Trust Services<i class="fa fa-caret-down"></i></a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="https://www.nexgentransfer.com/asset-protection-trust-india.aspx">Asset Protection</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/life-insurance-trust-india.aspx">Life Insurace</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/living-trust-india.aspx">Living Trust</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/minor-benificiary-trust-india.aspx">Minor Beneficiary</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/special-child-trust-india.aspx">Special Child Needs</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/special-purpose-trust.aspx">Special Purpose</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/business-value-protection-trust-india.aspx">Business Value Protection Trust</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/testamentary-trust-india.aspx">Testamentary Trusts</a></li>
+                                                                        <li><a href="https://www.nexgentransfer.com/uses-benefits-trust-india.aspx">Regular Trust</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.nexgentransfer.com/OurServices.aspx">Our Services
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.nexgentransfer.com/contact-us.aspx">Contact Us
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown">
+                                                            <a class="dropdown-toggle" href="#">
+                                                                             
+                                                            Partner With Us
+                                                            <i class="fa fa-caret-down"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="https://www.nexgentransfer.com/Become-Estate-Planner.aspx">Become Estate Planner</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a href="https://www.nexgentransfer.com/NexGen/NexGenUser/NexGenUserLogin/nexgen_userlogin.aspx">
+                                                                <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+  <div class="container-main">
+    <!-- Banner Section -->
+    <header class="headertr">
+        Secure Your Clients’ Legacy While Strengthening Your Practice
+
+    </header>
+    <div class="section-banner">
+      <div class="content-banner">
+        <h1>Is Your Wealth Management Truly Complete?</h1>
+        <p>As a financial advisor, you excel at wealth creation and growth. But does your strategy include comprehensive wealth transfer solutions?</p>
+        <!-- Mobile-only Form -->
+        <div class="form-contact-container-mobile">
+          <h3>Get in Touch</h3>
+          <p>Have questions? Fill out the form below, and we’ll get back to you shortly.</p>
+          <form>
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Phone" required>
+              <textarea placeholder="Message" rows="4" required></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </div><br class="br">
+
+        <p><strong>Without estate planning, many clients face:</strong></p>
+        <ul class="list-banner">
+          <li class="list-banner-item"><span style="font-weight:  600;">Uncertainty</span> about inheritance distribution</li>
+          <li class="list-banner-item"><span style="font-weight:  600;">Family disputes </span> that strain relationships</li>
+          <li class="list-banner-item"><span style="font-weight:  600;">Lack of control</span> over assets in retirement</li>
+        </ul>
+        <p>If you’re not addressing these critical concerns, your clients may feel their financial strategy is incomplete—and you may lose opportunities to stand out as their go-to advisor.</p>
+      </div>
+
+      <!-- Form Section -->
+      <div class="form-contact-container">
+        <h3>Get in Touch</h3>
+        <p>Have questions? Fill out the form below, and we’ll get back to you shortly.</p>
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone" required>
+          <input placeholder="Message" rows="4" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- New Content Section -->
+    <div class="section-content-main">
+      <h2>Partner with NexGen Estate Planning Solutions</h2>
+      <p class="paragraph-intro">Bridge the gap between growing wealth and securing legacies. With NexGen, you’ll help your clients protect their assets and ensure a smooth transfer to future generations.</p>
+    
+      <h3 style="
+      font-weight: 600;
+      color: black;
+  ">Why NexGen Estate Planning Solutions?</h3>
+      <div class="list-features">
+        <div class="box-feature">
+          <h4>Deepen Client Relationships</h4>
+          <p>Become a trusted partner by offering estate planning solutions alongside your financial services.</p>
+        </div>
+        <div class="box-feature">
+          <h4>Stay Ahead of Competitors</h4>
+          <p>Differentiate yourself with exclusive offerings like Wills, Trusts, and Succession Planning.</p>
+        </div>
+        <div class="box-feature">
+          <h4>Earn More, Stress Less</h4>
+          <p>Add a lucrative revenue stream with full back-office support, training, and resources provided by NexGen.</p>
+        </div>
+      </div>
+    
+      <p class="heading-cta"><strong>Don’t Let Wealth Management End with Wealth Creation</strong></p>
+      <p>Help your clients leave a legacy—not a mess. Take the next step toward becoming an all-in-one financial advisor.</p>
+      <a href="https://www.nexgentransfer.com/" class="btn-action">visit Now</a>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-ribbon">
+                <span>Get in Touch</span>
+            </div>
+            <div class="col-md-3">
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Keep yourself uptodate on all the latest developments which affect your estate plan. Subscribe to our newsletter.</p>
+
+                    <div class="alert alert-success hidden" id="newsletterSuccess">
+                        <strong>Success!</strong> You've been added to our email list.
+                    </div>
+
+                    <div class="alert alert-danger hidden" id="newsletterError"></div>
+
+                    <div id="pnlnew">
+
+                        <div class="input-group">
+                            <input name="ctl00$newsletterEmail" type="text" id="newsletterEmail" class="form-control" placeholder="Email Address *">
+                            <span class="input-group-btn">
+                                <input type="button" name="ctl00$btnnewsletter" value="Go!" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnnewsletter&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" id="btnnewsletter" class="btn btn-default">
+                            </span>
+                        </div>
+                    
+</div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Important Links</h4>
+
+                <ul class="list list-icons list-primary">
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0"><i class="fa fa-check"></i><a style="color: #777;" href="What-is-Estate-Planning.aspx">Estate Planning</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300" style="animation-delay: 300ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/Estate-Planning-Basics.aspx">Estate Plan Basics</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="600" style="animation-delay: 600ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/Discussing-Estate-Plan.aspx">Discussing Estate Plan</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="900" style="animation-delay: 900ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/Organize-Your-Estate-Planning-Documents.aspx">Organizing Document for Estate Planning</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="1200" style="animation-delay: 1200ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/getting-nominations-right-estate-planning.aspx">Right Way to Nominate</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-2">
+                <h4>_________________</h4>
+
+                <ul class="list list-icons list-primary">
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0"><i class="fa fa-check"></i><a style="color: #777;" href="will-india.aspx">All About Will</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300" style="animation-delay: 300ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/Trust-India.aspx">All About Trust</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="600" style="animation-delay: 600ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/will-writing-service-india.aspx">Will Services</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="900" style="animation-delay: 900ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/living-trust-india.aspx">Trust Services</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="1200" style="animation-delay: 1200ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/OurServices.aspx">Our Services</a></li>
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="1200" style="animation-delay: 1200ms;"><i class="fa fa-check"></i><a style="color: #777;" href="https://www.nexgentransfer.com/Become-Estate-Planner.aspx">Partners</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h4>_________________</h4>
+
+                <ul class="list list-icons list-primary">
+                    <li class="appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0"><i class="fa fa-check"></i><a style="color: #777;" href="#" data-toggle="modal" data-target="#formModalEP" "="">Become Estate Planner</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li class="social-icons-facebook">
+                        <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="social-icons-twitter">
+                        <a href="http://www.twitter.com/" target="_blank" title="Twitter">
+                            <img src="https://img.icons8.com/ios-filled/50/1da1f2/twitter.png
+
+                            " alt="Twitter" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="social-icons-linkedin">
+                        <a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
+                            <img src="https://img.icons8.com/ios-filled/50/0077b5/linkedin.png
+
+                            " alt="LinkedIn" width="30" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <a href="https://www.nexgentransfer.com/default.aspx" class="logo">
+                        <img alt="NEXGEN" class="img-responsive" src="https://www.nexgentransfer.com/img/logo.jpg">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <nav id="sub-menu1">
+                        <ul>
+                            <li><a href="https://www.nexgentransfer.com/privacy-policy.aspx">Privacy Policy</a></li>
+                            <li><a href="https://www.nexgentransfer.com/disclaimer.aspx">Disclaimer</a></li>
+                            <li><a href="https://www.nexgentransfer.com/terms-of-use.aspx">Terms of Use</a></li>
+                            <li><a href="https://www.nexgentransfer.com/refund-policy.aspx">Refund Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <nav id="sub-menu">
+                        <ul>
+                            <li><a href="https://www.nexgentransfer.com/frequently-asked-questions-wills-trusts.aspx">FAQ's</a></li>
+                            <li><a href="https://www.nexgentransfer.com/sitemap.xml" target="_blank">Sitemap</a></li>
+                            <li><a href="https://www.nexgentransfer.com/contact-us.aspx">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
